@@ -17,7 +17,7 @@
 
 ## Data
 
-Description of the dataset and where it is stored.
+
 
 ## Requirements
 
@@ -28,14 +28,9 @@ Description of the dataset and where it is stored.
 
 ## Setup Instructions
 
-Instructions for cloning the repository
-and restoring the R environment.
+
 
 ## Building the Report
 
-Instructions for rendering the final Quarto report.
 
-## Customization
 
-Instructions for modifying the report,
-models, and analysis.
