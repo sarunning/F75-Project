@@ -1,0 +1,17 @@
+# R temporary files
+.Rhistory
+.RData
+.Ruserdata
+
+# RStudio
+.Rproj.user/
+
+# renv local package library
+renv/library/
+renv/staging/
+
+# Operating system files
+.DS_Store
+
+# Temporary files
+*.tmp
