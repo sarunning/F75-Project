@@ -1,0 +1,23 @@
+---
+title: F75 Study Report
+authors: Madelyn Hill, Sydney Kuhn, Hannah Lawinger, Sarah Running
+output: html_document
+---
+
+``` {r, here-i-am}
+here::i_am("reports/report.Rmd")
+```
+
+``` {r, load-outputs}
+boxplot_arm_days <- readRDS(
+  here::here("output/figures/boxplot_arm_days.rds")
+)
+```
+
+# Days to Stabilization
+
+``` {r, arm-days-boxplot}
+boxplot_arm_days
+```
+
+The boxplot illustrates that the average number of days to stabilization is roughly equal between the intervention and control arms, though the maximum days to stabilization is higher among those who did not receive the intervention. Therefore, the modified milk formula treatment doesn't appear to significantly improve outcomes for children with severe acute malnutrition.
