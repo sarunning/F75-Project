@@ -1,0 +1,34 @@
+---
+title: "F75 Study Report"
+author: "Madelyn Hill, Sydney Kuhn, Hannah Lawinger, Sarah Running"
+output: html_document
+---
+
+```{r, here-i-am}
+here::i_am("reports/report.Rmd")
+```
+
+```{r, load-outputs1}
+sumtable <- readRDS(
+  here::here("output/tables/sumtable.rds")
+)
+```
+
+# Summary table
+```{r, sumtable}
+sumtable
+```
+
+The summary table provides descriptive statistics for age, sex, height, muac, and weight for all enrolled. 
+
+```{r, load-outputs2}
+boxplot_hiv <- readRDS(
+  here::here("output/figures/boxplot_hiv_days.rds")
+)
+```
+# HIV Results 
+```{r, boxplot_hiv}
+boxplot_hiv
+```
+
+The boxplot illustrates that the average number of days to stabilization is roughly equal between HIV positive and negative individuals, though the maxmimum days to stabilization is higher among HIV positive individuals. Therefore, HIV status doesn't appear to significantly affect outcomes for children with severe acute malnutrition.
