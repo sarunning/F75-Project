@@ -1,0 +1,23 @@
+---
+title: F75 Study Report
+authors: Madelyn Hill, Sydney Kuhn, Hannah Lawinger, Sarah Running
+output: html_document
+---
+
+``` {r, here-i-am}
+here::i_am("reports/report_SK.Rmd")
+```
+
+``` {r, load-outputs}
+boxplot_bfeeding_days <- readRDS(
+  here::here("output/figures/boxplot_bfeeding_days.rds")
+)
+```
+
+# Days to Stabilization by Breastfeeding Status
+
+``` {r, bfeeding-days-boxplot}
+boxplot_bfeeding_days
+```
+
+The boxplot illustrates that the median number of days to stabilization is roughly equal between children who were still breastfeeding and those who were not, though the maximum days to stabilization is higher among those who were still breastfeeding. Therefore, among survivors, breastfeeding status does not appear to significantly affect time to stabilization for children with severe acute malnutrition.
