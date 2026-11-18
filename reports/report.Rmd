@@ -20,7 +20,7 @@ boxplot_arm_days <- readRDS(
 boxplot_arm_days
 ```
 
-The boxplot illustrates that the average number of days to stabilization is roughly equal between the intervention and control arms, though the maximum days to stabilization is higher among those who did not receive the intervention. Therefore, the modified milk formula treatment doesn't appear to significantly improve outcomes for children with severe acute malnutrition.
+The boxplot illustrates that the median number of days to stabilization is roughly equal between the intervention and control arms, though the maximum days to stabilization is higher among those who did not receive the intervention. Therefore, the modified milk formula treatment doesn't appear to significantly improve outcomes for children with severe acute malnutrition.
 
 
 ```{r, load-outputs2}
@@ -46,7 +46,7 @@ boxplot_hiv <- readRDS(
 boxplot_hiv
 ```
 
-The boxplot illustrates that the average number of days to stabilization is roughly equal between HIV positive and negative individuals, though the maxmimum days to stabilization is higher among HIV positive individuals. Therefore, HIV status doesn't appear to significantly affect outcomes for children with severe acute malnutrition.
+The boxplot illustrates that the median number of days to stabilization is roughly equal between HIV positive and negative individuals, though the maxmimum days to stabilization is higher among HIV positive individuals. Therefore, HIV status doesn't appear to significantly affect outcomes for children with severe acute malnutrition.
 
 
 ``` {r, load-outputs4}
