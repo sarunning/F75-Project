@@ -8,7 +8,7 @@ output: html_document
 here::i_am("reports/report.Rmd")
 ```
 
-``` {r, load-outputs}
+``` {r, load-outputs1}
 boxplot_arm_days <- readRDS(
   here::here("output/figures/boxplot_arm_days.rds")
 )
@@ -21,3 +21,44 @@ boxplot_arm_days
 ```
 
 The boxplot illustrates that the average number of days to stabilization is roughly equal between the intervention and control arms, though the maximum days to stabilization is higher among those who did not receive the intervention. Therefore, the modified milk formula treatment doesn't appear to significantly improve outcomes for children with severe acute malnutrition.
+
+
+```{r, load-outputs2}
+sumtable <- readRDS(
+  here::here("output/tables/sumtable.rds")
+)
+```
+
+# Summary table
+```{r, sumtable}
+sumtable
+```
+
+The summary table provides descriptive statistics for age, sex, height, muac, and weight for all enrolled. 
+
+```{r, load-outputs3}
+boxplot_hiv <- readRDS(
+  here::here("output/figures/boxplot_hiv_days.rds")
+)
+```
+# HIV Results 
+```{r, boxplot_hiv}
+boxplot_hiv
+```
+
+The boxplot illustrates that the average number of days to stabilization is roughly equal between HIV positive and negative individuals, though the maxmimum days to stabilization is higher among HIV positive individuals. Therefore, HIV status doesn't appear to significantly affect outcomes for children with severe acute malnutrition.
+
+
+``` {r, load-outputs4}
+boxplot_bfeeding_days <- readRDS(
+  here::here("output/figures/boxplot_bfeeding_days.rds")
+)
+```
+
+# Days to Stabilization by Breastfeeding Status
+
+``` {r, bfeeding-days-boxplot}
+boxplot_bfeeding_days
+```
+
+The boxplot illustrates that the median number of days to stabilization is roughly equal between children who were still breastfeeding and those who were not, though the maximum days to stabilization is higher among those who were still breastfeeding. Therefore, among survivors, breastfeeding status does not appear to significantly affect time to stabilization for children with severe acute malnutrition.
