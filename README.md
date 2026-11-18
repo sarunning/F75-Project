@@ -1,9 +1,6 @@
----
+------------------------------------------------------------------------
 
-editor_options: 
-  markdown: 
-    wrap: 72
----
+editor_options: markdown: wrap: 72 ---
 
 # F75 Formula Project
 
@@ -46,7 +43,7 @@ The raw data are used by the analysis scripts to generate the outputs included i
 
 - R
 - RStudio
-- R Markdown
+- R M
 - renv
 - Make
 

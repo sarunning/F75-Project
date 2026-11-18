@@ -20,4 +20,4 @@ output/figures/boxplot_arm_days.rds: code/code_arms_daysstable.R data/raw/f75_in
 
 .PHONY: clean
 clean:
-	rm -f output/figures/*.rds output/figures/*.png reports/*.html
+	rm -f output/figures/*.rds output/tables/*.rds output/figures/*.png reports/*.html

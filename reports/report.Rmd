@@ -1,6 +1,6 @@
 ---
 title: F75 Study Report
-authors: Madelyn Hill, Sydney Kuhn, Hannah Lawinger, Sarah Running
+authors: "Madelyn Hill, Sydney Kuhn, Hannah Lawinger, Sarah Running"
 output: html_document
 ---
 
